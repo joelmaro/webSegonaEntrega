@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(197, 197, 197);
+}
+#container {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: rgb(115, 115, 255);
+}
+#logo{
+    background-image: url("images/logo.png");
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+#logo h1{
+    margin-top: 0px;
+    margin-left: 250px;
+    padding-top: 30px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-style: italic;
+    transition: margin-left 0.5s ease-in-out ;
+}
+#logo:hover > h1 {
+    margin-left: 400px;
+}
+main{
+width: 60%;
+}
+#content{
+    overflow: auto;
+    background-color: white;
+    display: flex;
+}
+aside {
+    width: 40%;
+}
+nav {
+    padding: 20px;
+    background-color: rgb(115, 115, 255);
+    top: 0px;
+    border-bottom: solid blue 3px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s ease-in-out;
+}
+nav > ul > li > a:hover {
+    color: blue;
+}
+nav > ul > li > ul {
+    list-style: none;
+    position: absolute;
+    left: -40px;
+    top: 40px;
+    display: none;
+}
+nav > ul > li:hover > ul{
+    display: block;
+    margin-top: 10px;
+}
+nav > ul > li > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+nav > ul > li > ul > li:hover > a{
+    text-decoration: none;
+    color: white;
+}
+nav > ul > li > ul > li:hover {
+    background-color: blue;
+}
+nav > ul > li > ul > li{
+    display: block;
+    background-color: rgb(115, 115, 255);
+    padding: 15px 10px;
+    width: 150px;
+    margin-left: 70px;
+}
+nav > ul > li > ul > li:last-child{
+    border-bottom: solid blue 3px;
+}
+
+.current{
+    color: black;
+}
+nav{
+    position: sticky;
+}
+nav ul{
+    margin: 0;
+}
+figure {
+    float: left;
+}
+figure img{
+    width: 200px;
+}
+figure {
+    text-align: center;
+    font-style: italic;
+    color: #000000ab;
+    border: solid 1px rgba(0, 0, 0, 0.13);
+}
+article#noticia1 h2, article#noticia2 h2, article#noticia3 h2 , article#noticia4 h2{
+margin-left: 40px;
+}
+h3 {
+    color: rgb(115, 115, 255);
+    padding: 10px;
+    font-size: 97%;
+}
+article h2, article p, article h3{
+    margin: 0px;
+}
+article p{
+    font-size: 85%;
+    padding-bottom: 20px;
+}
+article {
+    margin-top: 20px;
+    border-bottom: solid grey 1px;
+    transition: width 0.5s ease-in-out ;
+}
+footer {
+    border-top: solid blue 3px;
+    background-color: rgb(115, 115, 255);
+    padding: 15px;
+}
+article:hover > img{
+    width: 150px;
+}
+aside section{
+    margin-left: 40px;
+    padding-right: 20px;
+    width: 90%;
+    text-decoration: none;
+}
+aside section h2, aside section a{
+    text-decoration: none;
+    color: rgb(115, 115, 255);
+    display: block;
+}
+aside section a{
+    color: rgb(0, 0, 94);
+    font-size: 90%;
+    margin-top: 10px;
+   margin-bottom: 10px;
+   border-bottom: solid 0.5px black;
+   transition: margin 1.5s ease-in-out;
+}
+aside section a:hover{
+margin: 30px;
+}
+iframe {
+    padding-top: 20px;
+}
+aside section a h4, aside section a p{
+    margin-left: 30px;
+}
+
+article{
+    display: inline-block;
+}
+.text {
+    float: right;
+    width: 48%;
+}
+.text h3{
+    margin-top: 25px;
+}
+aside section a  {
+    display: flex;
+}
+aside section div {
+    margin-left: 10px;
+}
+footer .secciones {
+    display: flex;
+    border-bottom: solid black 0.5px;
+}
+footer .secciones section {
+    width: 33.3333%;
+    padding: 0px 20px;
+}
+footer .secciones section p{
+    background-color: rgba(84, 84, 187, 0.308);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer div img{
+    width: 35px;
+}
+footer div.xarxes {
+    align-items: center;
+    justify-content: space-between;
+}
+footer div.xarxes img {
+    border-radius: 10px;
+    margin: 0 5px 0 5px;
+    padding: 5px 5px 5px 5px;
+    list-style-type: none;
+}
+footer div.xarxes a{
+    text-decoration: none;
+}
+.xarxes section {
+    display: inline-block;
+    width: 49%;
+    padding-top: 15px;
+}
+.xarxes section:last-child{
+    text-align: right;
+}
